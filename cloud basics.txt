@@ -1,0 +1,240 @@
+CLOUD COMPUTING-->cloud computing is the delivery of computing services over the internet.(Pay as u Go)
+Computing Services include common IT infrastructure such as VM's ,storage, databases, networking, Cloud services also expand the traditional IT offering to include things like IOT,ML AI.
+
+History of Cloud-->self study.
+1)Client server Model
+	|
+2)Distributed model
+	|
+3)Cloud
+
+Benefits of cloud:-
+1.Cost efficiency
+2.speed
+3.productivity
+4.reliability
+5.data recovery
+6.business continuity
+7.security
+
+Challenges of Cloud Computing :-
+*1.Data security and privacy.
+2.Cost Management.
+3.multi-cloud environment.
+4.Performance challenges.-->load balance
+5.inter-operability.-->shifting from one cloud provider to another cloud provider.
+*6.hight dependency on network-->without internet we can't access.
+7.Lack of Knowledge/expertise.
+
+cloud service model:-
+1)infrastructure as a service(IaaS)-->it delivers on-demand infrastructure resources to organization via the cloud such networking,storage,VM's.
+->customers don't have to manage or maintain or update their own data center infrastructure but are responsible for the OS,middleware,apps/data
+	IT administration(ec2)
+2)platform as a service(PaaS)-->delivers and manages all the hardware and software resources to develop application through the cloud
+->developers and IT operations team can be use PaaS to develop run and manage applications without having to build and maintain infrastructure or platform on their own
+	software developer(vs-code)
+3)Software as a service(SaaS)-->it provides the entire application stack(bundle), delivering and entire  cloud based application that customers can access and use.
+	End-users(gmail)   Egs:-
+
+cloud deployment model:-
+1)public cloud(aws,azure,IBM):-it is managed by third party app
+2)private cloud:-it is particularly used by private organization.
+3)hybrid cloud:-it is combination of both.eg:-Netflix    
+4)community cloud:-it available for particular groups. Eg:-WhatsApp group     Egs:-
+
+cloud architecture:
+			client infrastructure (front-end)
+				|
+			  ((INTERNET))	
+				|
+			Application	              (Back-end)-->cloud provider
+			services
+MANAGEMENT	        storage                SECURITY
+			infrastructure 
+
+			
+
+Hyperviser--> it is used to  create VM's  
+VM-->Computer resources that uses a software instead of physical devices to run programs and deploy apps.
+
+1)Process VM-->single application.
+2)System VM-->multiple OS.
+
+Storage System:-infrastructure used to store the data.
+--->Physical
+--->Virtual
+
+->objects:data is stored in the form of objects.
+Objects are Irrelation
+
+
+Regions--->geographical distributed area where cloud resources is deployed.
+ Avialablity Zones--->single datacenter/multiple datacenter within a region .which can be interlinked.
+	-->independent datacenter within a region that ensure high availability and fault tolerance.
+
+Edge location---->Cache.
+
+ Edge location are specialized data centers used to store cache copied of uvr content closure to uvr customer.
+ 
+
+Types of cloud storage:
+
+object storage:-structural/non-structural way of storing the data. Eg:- WhatsApp backup
+file storage:-structural way of storing the data. Eg:-Drive->folder->file
+block storage:-data is stored in fragment.
+
+Cloud networking-->is virtual network components, topologies, configuration that run on a cloud provider physical networking infrastructure.
+VPC(virtual private cloud):-is a secure isolated private cloud hosted within a public cloud 
+subnets:-each VPC network consist of one or more ip address ranges called subnets.
+
+API(Application program interface):-exchange of data between the applications.
+			(or)
+It enables two software components to communicate each-other using set of definitions / protocols.
+
+cloud integration:- integration of two resources to exchange data between them.
+
+------------------------------------------*******************************************-----------------------------------------------
+
+Database:- collection of structed data that usually store electronically in a computing system.
+organized way to store data.
+
+
+row:-single entity
+column:-multiple entity
+
+Virtualization:- creation of virtual version of something .,such as server desktop, storage device an operating system and network resources.
+	-->Types of Virtualization
+1)Hardware Virtualization--> Vm are installed physical hardware
+2)OS Virtualization--> Vm are installed in different hardware
+3)Server Virtualization--> vm are installed in different server
+3)Storage Virtualization--> the process grouping the physical storage from multiple network storage devices so that it looks like single storage device. 
+				Eg:-weekly Timestamp
+
+Multi-tenancy:-
+		that multiple customers of a cloud vendor are using the same computing resources.
+
+Scalability:-
+            ability of a system to handle an increasing amount of work by adding resources to meet the growing demand.
+it also ensures system can maintain performance levels as the work load increase.
+
+vertical scaling and horizontal scaling:-
+
+vertical scaling involves adding more power to the existing machine.
+eg:incresing the CPU, memory or storage capacity.(scaling-Up).
+
+horizontal scaling also called as (scaling-out). adding more resources in parallel.
+
+Elasticity:- the ability of the system to automatically expand and contrast resources dynamically based on the demands or work load.
+
+Difference between Scalability v/s Elasticity-->self-study
+
+On-demand Self-Service:-
+is one of the feature in cloud computing which allows the users to automatically and independently access and manage the cloud resources as need without the human interaction with the service  provider.
+
+Pay-as-you-go Pricing Model:-
+ 	that uses pay based on how much they consume specific resources and 	services.
+
+Opex(short-term) vs Capex(long-term):
+
+Opex stands for operational expenditure which refers to expenses incurred to maintain day to day operations.
+
+ 
+Capex which stands capital expenditure which refer to expenses incurred to assests that will be used over an extended period.
+
+Disaster Recovery and Business Continuity in the Cloud:-
+
+Disaster recovery involves preparing for the events that can disrupts the business operations such as natural disaster, cyber-attacks , equipment failure or any emergic disaster.
+In disaster recover plan we have components called  RPO  and RTO
+
+RPO->Recovery point of objective where the maximum acceptable amount of data loss measured in time.
+
+RTO-->Recovery Time of objective the maximum acceptable amount of time that a system or application can be down after a disaster.
+
+business continuity--> is designing plans and strategies that keep business functions Up and running during and after a disaster.
+
+Solutions for business continuity disaster recovery. 
+1)identify critical components
+2)geographic redundancy
+3)data replication
+4)load balancing
+5)automatic backup
+6)disaster recovery plan
+7)fail over mechanism
+
+Fault tolerance:- is the ability of a system to continue operating in the event of the failure of one or more of its components.
+
+High availability:- it minimizes the service interruption by ensuring systems are always accessible and operational.
+
+aws-2006-->30 regions 96
+azure-2010-->50 regions 3
+Gcp-2011-->35 regions 106
+
+cloud providers:- is an it company that provides on-demand, scalable computing resources like data storage, computer power or application over the internet
+
+AWS             						azure   						GCP
+2006  								2010							2011
+EC2-->computing resources					VM						google compute engine
+airtel,razorpay,hdfc    				bosch,audi,starbucks,HP,walmart,ranault    		Toyota,wipro,ICICI,sharechat 
+capacity & access pattern				storage cost are based on				capacity & access frequency
+of the services							capacity & usage
+
+
+Cloud security-->is the set of controlled ways security measures and technology protection designed to protect online stored resources from leakage theft and data loss.
+protection includes data from cloud infrastructure ,applications and threats.
+Cloud security fundamentals :
+1)Data protection/data privacy
+2)Access Control
+3)network security
+4)monitoring and logging
+5)shared responsibility model
+
+
+Best practices:-
+1)understand the shared responsibility model
+2)implement strong identity and access management (IAM)--->giving the least previlage user
+3)encrypt data
+4)implement backup and recovery policy
+5)review and audit cloud security policy
+
+Compliance and Regulatory Concerns:- terms and conditions(policy)
+
+aws guard duty,IAM
+azure security center,azure active directory
+gcp cloud IAM,
+
+
+google cloud key management
+
+
+Optimizing Cloud Spending:-
+
+
+tools for :-aws cost explorer
+	    azure cost management & billing
+	 google cloud platform management tool
+
+
+tasks:-
+--->difference between authentication v/s authorization.
+--->why companies need to do encrypt data?
+
+
+
+
+
+
+
+		
+
+				
+				
+
+
+
+				
+
+
+
+
+
+
