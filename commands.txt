@@ -1,0 +1,96 @@
+/etc----->"system configuration and administration" 
+ 		^---<<<<-----Network settings(/etc/network/interfaces, /etc/resolv.conf), 
+			user-authentication(/etc/passwd, /etc/group, /etc/shadow, etc.),
+			System services (/etc/init.d/, /etc/systemd/system/, etc.)
+
+/var------>"system services and applications"
+		^---<<<<-----System logs (/var/log/) ,
+			     Temporary files (/var/tmp/) ,
+			     User mailboxes (/var/mail/)	
+			
+
+/bin--->" system binaries, which are executable programs that are used to perform various system tasks."
+			-->basically it contains commands. Eg:-cat, chmod, chown, ls .
+
+/dev---->"devices on your system, files are used to interact with hardware components, such as hard drives, keyboards, and network interfaces."
+			---> /dev/input/mice: The mouse device
+			     /dev/dri/card0: The first graphics card
+
+
+
+/home---> "The personal files and data of each user on the system, organized into individual user directories"
+			--->/home/user1: The home directory of user "user1"
+			    /home/user2: The home directory of user "user2"
+
+
+-------------------------------------**********------------------------------
+
+journalctl--> command that helps you view and manage system logs on Linux systems.
+   journalctl allows you to:
+		View these system logs
+		Filter them by date, time, or specific keywords
+		Analyze them to troubleshoot issues
+
+   >system logs---->System logs are like a record of everything that happens on computer. 
+		1)System events (e.g., startup, shutdown, errors)
+		2)Application events (e.g., login attempts, file access)
+		3)System messages (e.g., warnings, errors, info)
+
+   Think of journalctl like a detective investigating a crime scene. The system logs are like clues left behind, and journalctl helps you analyze these clues to figure out what happened and why.
+
+
+--------------------------*****************--------------------------------------
+
+sed-->"stream editor", commonly used for text substitution, deletion, and insertion
+SYNTAX:- sed 's/pattern/replacement/flags' file
+	
+	~pattern is the text you want to replace.
+	~replacement is the text to replace the pattern with.
+	~flags are optional and can include:
+			Delete lines with d.
+			Insert text with i.		
+			Append text with a.
+			Change lines with c.
+			Print specific lines with p
+
+	sed '12s/pattern/replacement/flags' file-->it will apply the substitution on line no.12
+	sed '3,10s/pattern/replacement/flags' file--->it will apply the substitution in between line no.3 to line no.10
+-----------------------********************---------------------------------------
+
+key difference between init.d and systemd
+
+  init.d-->uses scripts to manage services.(traditional/old one)
+  systemd-->uses configuration files (unit files) to define services.(advanced/new one)
+
+ init.d commands:-
+		1)service---->Eg: service apache2 start.
+ 
+ system commands:-
+		1)systemctl: Used to manage services, targets, and units. 			
+			  Examples: systemctl start myservice, systemctl status 
+		2)journalctl: Used to view system logs.
+			 Example: journalctl -u myservice.
+		3)systemd-analyze: Used to analyze system boot performance. 			
+			Example: systemd-analyze blame.
+
+--------------------------*****************-----------------------------------------
+1)truncate--->used to resize a file by setting its length to a specified size.
+  SYNTAX: truncate -s <size> <file>
+	        Eg:- truncate -s 10M example.txt
+
+2)ps--->"process status",display information about running processes. 
+	O/P format:----> process ID (PID), terminal ID (TTY), time (TIME), and command (CMD).
+	Eg: ps -a -->Show all running processes.
+	    ps -u $username-->Show processes for the current user:
+	    
+3)|(pipe)--> It's a way to connect the output of one command to the input of another command.
+	Eg: ls -l | grep keyword
+
+   Execution steps:-
+		*ls -l -->generates a list of files and directories with detailed information.
+		*the output of ls -l is sent to the grep command through the pipe.
+		*grep searches for the string "keyword" in the output it receives from ls -l.
+		*The final output shows only the lines that contain the string "keyword".
+    
+
+
